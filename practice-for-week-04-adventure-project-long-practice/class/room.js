@@ -44,9 +44,14 @@ class Room {
     }
 
     getItemByName(name) {
-        // Retrieves an item from a room by item name
+        for (let i = 0; i < this.items.length; i++){
+            let ele = this.items[i]
 
-        // Your code here
+            if(ele.name === name){
+                
+                return ele
+            }
+        }
     }
 
 }
